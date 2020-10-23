@@ -7,10 +7,69 @@ html {
   text-size-adjust: 100%;
 
   font-family: "Overpass", sans-serif;
-  background-color: #ff9500;
   color: #fff;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+  margin: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.card ul {
+  padding: 0;
+}
+
+.card li {
+  list-style-type: none;
+}
+
+.card a {
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon svg {
+  fill: currentColor;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+  }
+
+  h3 {
+    justify-content: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
