@@ -6,7 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font-family: "Overpass", sans-serif;
+  font-family: Overpass, sans-serif;
   color: #fff;
 }
 
@@ -16,34 +16,57 @@ html {
 
 body {
   background-image: linear-gradient(#ff9500, #ff5e3a);
+  margin: 0;
+}
+
+section {
   margin: 1.5rem;
 }
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   font-size: 1.5rem;
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.card {
+  margin-bottom: 1rem;
 }
 
 .card ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   padding: 0;
 }
 
 .card li {
+  justify-content: center;
   list-style-type: none;
 }
 
 .card a {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   color: #fff;
   text-decoration: none;
 }
 
+.card a:hover,
+.card a:focus {
+  color: #acc300;
+}
+
 .icon svg {
   fill: currentColor;
+  height: 8rem;
+  width: 8rem;
 }
 
 .card p {
@@ -51,25 +74,40 @@ h3 {
 }
 
 .btn {
-  border: 2px solid #fff;
+  border: .2rem solid rgba(255, 255, 255, .7);
   color: #fff;
+  font-size: 1.125rem;
   padding: 1rem;
   text-decoration: none;
 }
 
 @media only screen and (min-width: 38em) {
 
-  html {
-    font-size: 110%;
+  h2 {
+    text-align: center;
+    margin: 2rem 0;
   }
 
   h3 {
-    justify-content: center;
+    margin-top: 1.5rem;
   }
 
   .cards {
     display: grid;
+    grid-gap: 6vmin;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  section {
+    padding: 2rem;
   }
 
 }
