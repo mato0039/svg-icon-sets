@@ -60,7 +60,7 @@ h3 {
 
 .card a:hover,
 .card a:focus {
-  color: #acc300;
+  color: #ff9500;
 }
 
 .icon svg {
@@ -90,12 +90,18 @@ h3 {
 
   h3 {
     margin-top: 1.5rem;
+    margin-bottom: .5rem;
   }
 
   .cards {
     display: grid;
     grid-gap: 6vmin;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card li {
+    align-items: stretch;
+    padding: .2rem;
   }
 
 }
